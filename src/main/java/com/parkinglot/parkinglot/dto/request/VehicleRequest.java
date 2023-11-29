@@ -1,47 +1,65 @@
-package com.developer.parkinglot.dto.request;
+package com.parkinglot.parkinglot.dto.request;
 
 import java.io.Serializable;
 import java.util.Date;
 
 public class VehicleRequest implements Serializable {
     private Long id;
-    private String name;
-    private String gender;
-    private Date dateOfBirth;
-    private String address;
+    private String licensePlate;
+    private String type;
+    private String brand;
+    private String model;
+    private Integer year;
+    private String color;
 
     public VehicleRequest() {
     }
 
-    public String getName() {
-        return name;
+    public String getLicensePlate() {
+        return licensePlate;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
     }
 
-    public String getGender() {
-        return gender;
+    public String getType() {
+        return type;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public String getAddress() {
-        return address;
+    public String getModel() {
+        return model;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

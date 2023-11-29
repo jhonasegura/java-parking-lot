@@ -1,9 +1,9 @@
-package com.developer.parkinglot.controller;
+package com.parkinglot.parkinglot.controller;
 
-import com.developer.parkinglot.dto.request.VehicleRequest;
-import com.developer.parkinglot.dto.response.VehicleResponse;
-import com.developer.parkinglot.entity.VehicleEntity;
-import com.developer.parkinglot.service.VehicleService;
+import com.parkinglot.parkinglot.dto.request.VehicleRequest;
+import com.parkinglot.parkinglot.dto.response.VehicleResponse;
+import com.parkinglot.parkinglot.entity.VehicleEntity;
+import com.parkinglot.parkinglot.service.VehicleService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;

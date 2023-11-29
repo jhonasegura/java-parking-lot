@@ -1,4 +1,4 @@
-package com.developer.parkinglot.entity;
+package com.parkinglot.parkinglot.entity;
 
 import java.util.Date;
 import jakarta.persistence.*;
@@ -8,20 +8,26 @@ import jakarta.persistence.*;
 public class VehicleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "emp_id")
+    @Column(name = "veh_id")
     private Long id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "license_plate")
+    private String licensePlate;
 
-    @Column(name = "gender")
-    private String gender;
+    @Column(name = "type")
+    private String type;
 
-    @Column(name = "date_of_birth")
-    private Date dateOfBirth;
+    @Column(name = "brand")
+    private String brand;
 
-    @Column(name = "address")
-    private String address;
+    @Column(name = "model")
+    private String model;
+
+    @Column(name = "year")
+    private Integer year;
+
+    @Column(name = "color")
+    private String color;
 
     public VehicleEntity() {
     }
@@ -34,36 +40,52 @@ public class VehicleEntity {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getLicensePlate() {
+        return licensePlate;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
     }
 
-    public String getGender() {
-        return gender;
+    public String getType() {
+        return type;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public String getAddress() {
-        return address;
+    public String getModel() {
+        return model;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
 }

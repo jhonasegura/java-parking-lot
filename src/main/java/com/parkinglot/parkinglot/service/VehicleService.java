@@ -1,8 +1,8 @@
-package com.developer.parkinglot.service;
+package com.parkinglot.parkinglot.service;
 
-import com.developer.parkinglot.dto.request.VehicleRequest;
-import com.developer.parkinglot.dto.response.VehicleResponse;
-import com.developer.parkinglot.entity.VehicleEntity;
+import com.parkinglot.parkinglot.dto.request.VehicleRequest;
+import com.parkinglot.parkinglot.dto.response.VehicleResponse;
+import com.parkinglot.parkinglot.entity.VehicleEntity;
 
 import java.util.List;
 import java.util.Optional;
