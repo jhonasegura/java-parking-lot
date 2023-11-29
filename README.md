@@ -1,4 +1,4 @@
-# Prueba Fit Mall Plaza
+# API REST JAVA - SPRING BOOT CON CRUD COMPLETO 
 
 ## Indicaciones
 
@@ -11,5 +11,3 @@ Port: 5432
 Database: root
 Username: root
 Password: root
-
-## Elaborado Por Jhonathan Salas
