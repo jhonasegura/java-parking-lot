@@ -1,18 +1,43 @@
-package com.parkinglot.parkinglot.dto.request;
+package com.parkinglot.entity;
 
-import java.io.Serializable;
 import java.util.Date;
+import jakarta.persistence.*;
 
-public class VehicleRequest implements Serializable {
+@Entity
+@Table(name = "vehicle")
+public class VehicleEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "veh_id")
     private Long id;
+
+    @Column(name = "license_plate")
     private String licensePlate;
+
+    @Column(name = "type")
     private String type;
+
+    @Column(name = "brand")
     private String brand;
+
+    @Column(name = "model")
     private String model;
+
+    @Column(name = "year")
     private Integer year;
+
+    @Column(name = "color")
     private String color;
 
-    public VehicleRequest() {
+    public VehicleEntity() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getLicensePlate() {
@@ -62,4 +87,5 @@ public class VehicleRequest implements Serializable {
     public void setColor(String color) {
         this.color = color;
     }
+
 }

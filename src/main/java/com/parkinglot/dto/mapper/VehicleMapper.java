@@ -1,8 +1,8 @@
-package com.parkinglot.parkinglot.dto.mapper;
+package com.parkinglot.dto.mapper;
 
-import com.parkinglot.parkinglot.dto.request.VehicleRequest;
-import com.parkinglot.parkinglot.dto.response.VehicleResponse;
-import com.parkinglot.parkinglot.entity.VehicleEntity;
+import com.parkinglot.dto.request.VehicleRequest;
+import com.parkinglot.dto.response.VehicleResponse;
+import com.parkinglot.entity.VehicleEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,9 +1,9 @@
-package com.parkinglot.parkinglot.dto.response;
+package com.parkinglot.dto.request;
 
 import java.io.Serializable;
 import java.util.Date;
 
-public class VehicleResponse implements Serializable {
+public class VehicleRequest implements Serializable {
     private Long id;
     private String licensePlate;
     private String type;
@@ -12,15 +12,7 @@ public class VehicleResponse implements Serializable {
     private Integer year;
     private String color;
 
-    public VehicleResponse() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public VehicleRequest() {
     }
 
     public String getLicensePlate() {

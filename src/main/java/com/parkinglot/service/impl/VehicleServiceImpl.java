@@ -1,11 +1,11 @@
-package com.parkinglot.parkinglot.service.impl;
+package com.parkinglot.service.impl;
 
-import com.parkinglot.parkinglot.dto.mapper.VehicleMapper;
-import com.parkinglot.parkinglot.dto.request.VehicleRequest;
-import com.parkinglot.parkinglot.dto.response.VehicleResponse;
-import com.parkinglot.parkinglot.entity.VehicleEntity;
-import com.parkinglot.parkinglot.repository.VehicleRepository;
-import com.parkinglot.parkinglot.service.VehicleService;
+import com.parkinglot.dto.mapper.VehicleMapper;
+import com.parkinglot.dto.request.VehicleRequest;
+import com.parkinglot.dto.response.VehicleResponse;
+import com.parkinglot.entity.VehicleEntity;
+import com.parkinglot.repository.VehicleRepository;
+import com.parkinglot.service.VehicleService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
